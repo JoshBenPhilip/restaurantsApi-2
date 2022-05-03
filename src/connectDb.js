@@ -1,4 +1,5 @@
 // import tools from firebase
+import { app } from 'firebase-admin';
 import { initializeApp, getApps, cert } from 'firebase-admin/app';
 // import firestore from firebase
 import { getFirestore} from 'firebase-admin/firestore';
@@ -19,4 +20,6 @@ initializeApp({
 // return the connection to firestore
 return getFirestore();
 }
+
+
 
